@@ -1,9 +1,4 @@
 {
   "name": "promptlens-backend",
-  "version": "1.0.0",
-  "description": "PromptLens API backend",
-  "main": "api/enhance.js",
-  "scripts": {
-    "dev": "vercel dev"
-  }
+  "version": "1.0.0"
 }
