@@ -19,7 +19,7 @@ module.exports = async function handler(req, res) {
   const { rawPrompt, category, count, userProfile, usagePatterns, deepProfile } = req.body || {};
   if (!rawPrompt) return res.status(400).json({ error: 'No prompt provided' });
 
-  const apiKey = process.env.GEMINI_API_KEY;
+  const apiKey = process.env.GEMINI_API_KEY || 'YOUR_KEY_HERE';
   if (!apiKey) return res.status(500).json({ error: 'GEMINI_API_KEY not set on server' });
 
   try {
